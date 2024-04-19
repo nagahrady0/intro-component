@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="col-left">
+			<div class="heading">  
+				Learn to code by watching others
+			</div>
+			<p>
+				See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  				but understanding how developers think is invaluable.
+			</p>
+		</div>
+		<div class="col-right">
+			<div>
+				  Try it free 7 days <span> then $20/mo. thereafter </span>
+			</div>
+			<form>
+				<div class="form-control">
+					<input type="text" placeholder="First Name" id="fname"/>
+					<div class="error-message">
+						First Name cannot be empty
+					</div>
+				</div>
+				<div class="form-control">
+					<input type="text" placeholder="Last Name" id="lname"/>
+					<div class="error-message">
+						last Name cannot be empty
+					</div>
+				</div>				
+				<div class="form-control">
+					<input type="email" placeholder="Email Address" id="email"/>
+					<div class="error-message">
+						looks like this is not an email
+					</div>
+				</div>				
+				<div class="form-control">
+					<input type="password" placeholder="Password" id="password"/>
+					<div class="error-message">
+						First Name cannot be empty
+					</div>
+				</div>
+				<div class="form-control>">
+					<button>
+						  Claim your free trial 
+					</button>
+				</div>	
+				<div>
+					  By clicking the button, you are agreeing to our <span>Terms and Services</span>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://nagah.netlify.app/">Nagah Rady</a>.
+    </p>
+  </footer>
+  
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+min-height:100vh;
+background-image:url('./../images/bg-intro-desktop.png');
+background-color:rgba(255,0,0,.5);
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+gap:40px;
+justify-content:space-between;
+padding:20px 50px;
+}
+.container{
+display:flex;
+align-items:center;
+gap:30px;
+max-width:1200px;
+}
+.container .col-left , .container .col-right{
+width:50%;
+}
+.container .col-left .heading{
+color:#fff;
+font-weight:bold;
+font-size:50px;
+margin-bottom:20px;
+}
+.container .col-left p{
+color:rgba(255,255,255,.7);
+line-height:1.5rem;
+}
+
+.container .col-right > div:first-of-type {
+background:#5D54A3;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+color:#fff;
+text-align:center;
+box-shadow:0px 5px 5px rgba(0,0,0,.5);
+}
+.container .col-right > div:first-of-type span{
+color:rgba(255,255,255,.7);
+}
+.container .col-right form{
+background:#fff;
+padding:30px;
+border-radius:10px;
+}
+.container .col-right form .form-control  , button{
+margin-bottom:25px;
+}
+.container .col-right form .form-control input , button{
+width:100%;
+height:40px;
+outline:none;
+border:1px solid #000;
+border-radius:5px;
+}
+.container .col-right form input{
+text-indent:15px;
+margin-bottom:10px;
+}
+
+
+
+.error-message{
+display:none;
+color:red;
+text-align:right;
+padding-right:20px;
+position:relative;
+}
+.error-message::before{
+content:"";
+width:30px;
+height:30px;
+display:block;
+position:absolute;
+right:20px;
+top:-45px;
+background:url("./../images/icon-error.svg");
+background-size:cover;
+background-position:center;
+border-radius:50%;
+}
+
+
+
+
+
+
+
+.container .col-right form button{
+background-color:#37CC8A;
+border:none;
+color:rgba(255,255,255,.9);
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:3px;
+cursor:pointer;
+}
+.container .col-right form > div:last-child{
+font-size: 12px;
+  text-align: center;
+  color: rgba(0,0,0,.7);
+}
+.container .col-right form div span{
+color:red;
+cursor:pointer;
+}
+
+
+@media(max-width:767px){
+
+.body{
+background:url("./../images/bg-intro-mobile.png");
+}
+.container{
+flex-direction:column;
+}
+.container .col-left , .container .col-right{
+width:100%;
+}
+.container .col-left .heading{
+color:#fff;
+font-weight:bold;
+font-size:30px;
+margin-bottom:20px;
+text-align:center;
+}
+.container .col-left p{
+color:rgba(255,255,255,.7);
+line-height:1.5rem;
+text-align:center;
+}
+
+
+
+
+
+}
+
